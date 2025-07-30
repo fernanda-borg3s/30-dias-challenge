@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-300px;
+  margin-top:-200px;
+  width: 600px;
+  height:400px;
+    box-shadow: 5px 0px 50px rgba(0,0,0,0.3);
+
+}
+.box{
+  display:flex;
+  height:400px;
+  
+}
+.coluna1{
+   width:250px;
+background: linear-gradient(0deg, rgba(125,127,199,1) 
+  0%, rgba(0,164,255,1) 100%);
+
+}
+.txt-coluna1{
+  position:absolute;
+  top:200px;
+  left:15px;
+  color:#fff;
+  width:200px;
+  
+}
+.txt-coluna1 p {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top:-12px;
+}
+.coluna1 img{
+width:250px;
+height:400px;
+ filter: brightness(40%);
+  
+}
+.coluna2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin:auto;
+  width:45%;
+  height:200px;
+
+}
+.coluna2::after{
+  content:'';
+  width:280px;
+  height:10px;
+  position:absolute;
+  top:0;
+  background:#B83204;
+  
+}
+form{
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+h2{
+  margin:0;
+  padding:10px;
+  color:rgb(184, 50, 4);
+}
+input{
+width:85%;
+  height:20px;
+  margin:5px;
+  padding:8px;
+  border-radius:10px;
+  border:0.5px solid rgb(184, 50, 4, 0.9);
+}
+input::placeholder{
+  color:rgb(184, 50, 4, 0.7);
+  
+}
+input:focus{
+  outline:1px solid rgb(184, 50, 4, 0.7);
+}
+button{
+  cursor:pointer;
+}
+button:hover{
+  background: rgb(184, 50, 4, 0.3);
+  border: 1px solid rgb(184, 50, 4);
+}
+button.btn-entrar{
+  margin:10px 0;
+  width:100px;
+  height:30px;
+  background:rgb(184, 50, 4, 0.9);
+  border:none;
+  color:#fff;
+  font-size:15px;
+  text-transform:uppercase;
+
+}
+.opcao{
+  margin-left:10px;
+}
+.opcao > button{
+  width:93%;
+  padding:5px 0 5px 0px;
+  margin: 5px;
+  background:#fff;
+  border: 1px solid #c4c4c4;
+  font-size:16px;
+}
+.opcao button:first-child{
+  background:#E94235;
+  color:#fff;
+}
+.opcao button:last-child{
+  background:#3A5795;
+  color:#fff;
+}
+a{
+  letter-spacing:1px;
+  margin-bottom:10px;
+  color:#B83204;
+  text-decoration:none;
+  
+}
+a:hover{
+  color:#000;
+}

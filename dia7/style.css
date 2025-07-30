@@ -1,0 +1,68 @@
+body{
+  background:rgb(0,0,0,0.8);
+}
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:400px;
+  height:400px;
+  margin-left:-200px;
+  margin-top:-200px;
+  box-shadow: 1px 0px 50px rgb(0,0,0,0.3);
+background:transparent;
+
+}
+.box{
+  width:400px;
+  height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.box div{
+  background:conic-gradient(#fff 40%, #FF1E00 50%);
+  width:150px;
+  height:150px;
+  border-radius:75px;
+  border: 1px solid #000;
+  animation: roda 2s linear infinite;
+}
+button{
+  width:140px;
+  height:140px;
+  border-radius:90px;
+  border:none;
+  background:#181818;
+ position:absolute;
+}
+p{
+  color:#fff;
+  animation: piscaLetra 1.5s ease-in-out alternate infinite;
+}
+@keyframes roda{
+  10%, 20%{
+    background:conic-gradient(#fff 100%, #FF1E00);
+  }
+  30%, 40%{
+      background:conic-gradient(#fff 50%, #FF1E00);
+  }
+    60%{
+    background:conic-gradient(#fff 10%, #FF1E00 50%);
+  }
+  90%, 100%{
+ background:conic-gradient(#fff , #FF1E00 10%);
+    transform:rotate(1turn);
+    
+  }
+}
+@keyframes piscaLetra{
+  
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+    
+  }
+}

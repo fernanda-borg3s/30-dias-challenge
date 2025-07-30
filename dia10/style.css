@@ -1,0 +1,103 @@
+@charset "UTF-8";
+* {
+  color: #000;
+}
+
+body {
+  background: #68a691;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.3);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa {
+  width: 300px;
+  height: 350px;
+  background: #efefef;
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border: 1px solid #bfd3c1;
+}
+
+h1 {
+  text-align: center;
+  margin: 2px;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  margin-top: -5px;
+}
+
+h1::before {
+  content: "";
+  width: 220px;
+  height: 2px;
+  background: #68a691;
+  position: absolute;
+  top: 110px;
+  left: 90px;
+}
+
+.lista {
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 24px;
+}
+.lista input[type=checkbox] {
+  display: none;
+}
+
+:where(input, label) {
+  margin-bottom: 9px;
+}
+
+input[type=checkbox] + label:before {
+  content: "🗸";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 1px solid #bfd3c1;
+  border-radius: 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: transparent;
+  transition: 0.2s;
+  margin-right: 16px;
+  background: #68a691;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label:before {
+  color: #fff;
+  border: 1px solid #694f5d;
+  background: #694f5d;
+}
+
+input[type=checkbox] + label {
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+input[type=checkbox] + label:hover {
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=style.css.map */

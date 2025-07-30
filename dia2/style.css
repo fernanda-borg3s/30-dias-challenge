@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  color: #2C3333;
+}
+
+:root {
+  --first-color: #B1B2FF;
+  --second-color:#AAC4FF;
+  --third-color:#D2DAFF;
+}
+
+body {
+  margin: 5px;
+  padding: 0;
+  background: #EEF1FF;
+}
+
+nav {
+  width: 100%;
+  height: 30vh;
+  background: var(--first-color);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 25px;
+}
+nav ul li {
+  padding: 20px;
+}
+
+.menu-side {
+  float: left;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-side a {
+  background: var(--second-color);
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  height: 70px;
+  color: black;
+  text-decoration: none;
+}
+.menu-side a:hover {
+  background: #7A86B6;
+  color: #fff;
+}
+
+.main {
+  margin: 5px;
+  float: right;
+  width: calc(80% - 20px);
+  padding: 20px;
+  background: var(--third-color);
+}
+.main h1 {
+  text-align: center;
+  font-size: 28px;
+  margin: 10px 0;
+}
+.main .box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > div {
+  width: 200px;
+  height: 250px;
+  background: var(--second-color);
+  margin: 10px;
+}
+.box > div h2, .box > div p {
+  padding: 0 20px;
+  text-align: justify;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  background: var(--first-color);
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+button:hover {
+  background: #7A86B6;
+  color: #fff;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+  background: var(--first-color);
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .menu-side, .main, .right {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
