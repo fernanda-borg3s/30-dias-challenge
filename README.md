@@ -33,3 +33,9 @@ Cada dia apresenta um desafio único que envolve **lógica, composição visual,
 
 ```bash
 git clone https://github.com/seu-usuario/30-dias-challenge.git
+```
+2. Acesso Online
+
+```bash
+https://codepen.io/fernanda-borg3s
+```
