@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+     padding:0;
+     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    overflow-y: hidden;
+}
+section{ 
+    width: 0px;
+    height:100vh;
+    background:#B31B37;
+    position: absolute;
+    right: 0;
+    padding:52px;
+    position:fixed;
+    z-index: 1;
+    transition: 1s;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top:40px;
+  margin-top:50px;
+}
+a{
+    text-decoration:none;
+    color:#EEF1EF;
+    padding:20px 10px 0 20px;
+    /* background:green; */
+    width: 100px;
+    height: 100px;
+    
+}
+a > img{
+    width:60px;
+    height: 53px;
+}
+a:hover{
+    background: rgba(0, 0, 0, 0.25);
+}
+.pag{
+    width:100%;
+    height:calc(100vh - 45px);
+    position:absolute;
+    transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1);
+  }
+.bg{
+    width: 100%;
+    height: 100vh;
+ filter: brightness(85%);
+}
+.pag1{
+    right:0;
+}
+.pag2{
+    right:100%;
+}
+.pag3{
+    right:200%;
+}
+.pag4{
+    right:300%;
+}
+#icon1:target .pag.pag1{
+    transform:translateX(0);
+}
+#icon2:target .pag.pag2{
+    transform:translateX(100%);
+}
+#icon3:target .pag.pag3{
+    transform:translateX(200%);
+}
+#icon4:target .pag.pag4{
+    transform:translateX(300%);
+}
+/*****************************8888 CONFIGURAÇÃO DA LOGO ************************************/
+
+.cabecalho{
+    position: absolute;
+    top:30px;
+    left:102px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 29px;
+    color: #1E1E1E;
+    text-transform: uppercase;
+}
+.logo h3 + h3 div.quadro{
+    width: 37px;
+height: 25px;
+background: #B31B37;
+border-radius: 5px;
+position: absolute;
+left: 112px;
+top: 32px;
+}
+.logo2{
+    color: #05040A;
+
+}
+.logo2 h3+h3 div.quadro2{
+    background: #EB362C;
+
+}
+.logo3{
+    color: #fff;
+
+}
+.logo3 h3+h3 div.quadro3{
+    background: #FEEA00;
+
+}
+.logo4{
+    color: #EDDDB0;;
+
+}
+.logo4 h3+h3 div.quadro4{
+    background: #B35442;
+
+}
+/*****************************8888 CONFIGURAÇÃO DOS QUADRADOS DE COR ************************************/
+.color-square{
+    display: flex;
+}
+.color-square > div{
+    width: 28px;
+    height: 28px;
+    background-color: #7C0B2B;
+    margin:10px;
+}
+:where(.color-square, .color-square2, .color-square3, .color-square4) div:nth-child(1){
+    background-color: #fff;
+}
+.color-square div:nth-child(2){
+    background-color: #9EA5AB;
+}
+.color-square div:nth-child(3){
+    background-color: #1E1E1E;
+}
+.color-square div:nth-child(4){
+    background-color: #B31B37;
+}
+
+.color-square2 div:nth-child(2){
+    background: #BCA89D;
+}
+.color-square2 div:nth-child(3){
+    background: #05040A;
+}
+.color-square2 div:nth-child(4){
+    background: #EB362C;
+}
+
+.color-square3 div:nth-child(2){
+    background: #797D81;
+}
+.color-square3 div:nth-child(3){
+    background: #05204A;
+}
+.color-square3 div:nth-child(4){
+    background: #FEEA00;
+}
+.color-square4 div:nth-child(2){
+    background: #EDDDB0;
+}
+.color-square4 div:nth-child(3){
+    background: #E1B96E;
+}
+.color-square4 div:nth-child(4){
+    background: #B35442;
+}
+/*****************************8888 CONFIGURAÇÃO DOS TEXTOS ************************************/
+.text{
+    position: absolute;
+    left: 291px;
+    top: 50%;
+
+}
+.text h1, .text h2{
+    font-weight: 800;
+    font-size: 110px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text h2{
+    font-weight: 400;
+    line-height: 50px;
+    color: #B31B37;
+}
+.text p, .text2 p, .text4 p{
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+    width: 660px;
+    margin-top:40px;
+    color:#1E1E1E;
+}
+.text2, .text4{
+    position: absolute;
+    left: 112px;
+    top: 200px;
+    font-weight: 800;
+    line-height: 120px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text2 h1, .text2 h2{
+    font-size: 120px;
+}
+.text2 h2{
+    color: #EB362C;
+}
+.text2 button, .text4 button{
+    width: 243px;
+    height: 50px;
+    background: #EB362C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:none;
+    color:#FFFFFF;
+    font-size:20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.text3{
+    position: absolute;
+    left: 30%;
+    top: 160px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text3 h1{
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 183px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.text3 h2{
+    font-weight: 400;
+    font-size: 130px;
+    line-height: 100px;
+    width: 100%;
+    color: #FEEA00;  
+    text-align: center;
+
+}
+.text3 p{
+    width: 900px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: justify;
+    color: #FFFFFF;
+    margin-top:30px;
+}
+.text3 input{
+    width: 550px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #05204A;
+    margin:50px 0 0 150px;
+    padding: 13px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.text3 button{
+   position: relative;
+   top:12px;
+   height: 49.55px;
+    background:#FEEA00;
+    padding: 10px;
+    border: 1px solid #05204A;
+}
+.text3 button img{
+    width: 35px;
+ 
+}
+
+.text4 h1{
+color: #E1B96E;
+font-size: 128px;
+
+}
+.text4 h2{
+    font-size: 120px;
+    line-height: 90px;
+    font-weight: 500;
+color: #EDDDB0;
+}
+.text4 p{
+font-weight: 500;
+
+width:752px;
+color: #EDDDB0;
+}
+.text4 button{
+background: #EDDDB0;
+color: #B35442;
+margin-top:50px;
+}
+svg.line-top{
+    position: absolute;
+    left:-220px;
+    top:-20px;
+    width: 208%;
+}
+svg.line-right{
+    position: absolute;
+    left:-80px;
+    top:-20px;
+    height: 100%;
+}
+svg.line-left{
+    position: absolute;
+    left:-190px;
+    top:-50px;
+}
+svg.line-bottom{
+    position: absolute;
+    left:-280px;
+    top:355px;
+    width: 200%;
+}

@@ -1,0 +1,123 @@
+
+:root{
+  --color-doll: white;
+}
+body{
+  background-color: #88888a;
+}
+h1{
+  text-align:center;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top:10%;
+  
+}
+.container{
+position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+    background-color: #00f5d8;
+	box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+}
+.box-doll{
+ 	position: absolute;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.head{
+  width: 45px;
+  height: 45px;
+  background: var(--color-doll);
+  align-items :flex-start;
+  justify-items: center;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+.box-body{
+  position: relative;	
+		height: 80px;
+		width: 50px;
+		background: var(--color-doll);
+  border-radius: 10px;
+}
+.triangulo{
+  width: 0; 
+  height: 0; 
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 145px solid var(--color-doll);
+  position:relative;
+  transform: translate(-37.7%,-150%);
+}
+.arm-left, .arm-left-part, .arm-right, .arm-right-part{
+    background: var(--color-doll);
+  width: 23px;
+  height:60px;
+  position:relative;
+  margin:0;
+  border-radius: 12px;
+}
+.arm-left{
+  right:35%;
+  transform: rotate(30deg)
+}
+.arm-left-part{
+  right:77%;
+  bottom:30%;
+  transform: rotate(30deg)
+}
+.arm-right{
+  left:105%;
+bottom:163%;
+  transform: rotate(-70deg);
+   animation: ombro 1s ease-in-out infinite alternate;
+}
+.arm-right-part{
+ left:153%;
+  bottom:255%;
+	animation: mao 1s ease-in-out infinite alternate;
+}
+
+div.box-leg{
+  display:flex;
+  position:relative;
+bottom:300%;
+
+}
+.leg1, .leg2{
+   background: var(--color-doll);
+  width:30px;
+  height: 120px;
+  border-radius: 15px;
+}
+.leg1{
+  left: 41%;
+  margin-right:2px;
+}
+.leg2{
+  left:42.3%;
+}
+@keyframes ombro {
+	0% {
+		transform: rotate(-70deg);
+	}
+	100% {
+		transform: rotate(-75deg);
+	}
+}
+
+@keyframes mao {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(15deg);
+	}
+}

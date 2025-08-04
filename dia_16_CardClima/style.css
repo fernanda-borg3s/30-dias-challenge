@@ -1,0 +1,159 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 0px 50px rgba(0, 0, 0, 0.3);
+  background: #1A2238;
+  overflow-X: hidden;
+}
+
+.slider {
+  width: 1600px;
+  height: 350px;
+  overflow: hidden;
+  margin: 30px 10px 0 0px;
+}
+
+.slides {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.navegar-manual {
+  position: absolute;
+  bottom: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+p {
+  color: #6480aa;
+  text-align: left;
+}
+
+.sol, .parcial-nublado, .nublado, .chuva {
+  width: 400px;
+  height: 350px;
+  line-height: 2px;
+}
+.sol .txt-box, .parcial-nublado .txt-box, .nublado .txt-box, .chuva .txt-box {
+  height: 160px;
+  display: flex;
+  margin: 30px 5px;
+  width: 97%;
+  background: #efefef;
+  border-radius: 2px 2px 25px 25px;
+}
+.sol .txt, .sol .details, .parcial-nublado .txt, .parcial-nublado .details, .nublado .txt, .nublado .details, .chuva .txt, .chuva .details {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+  font-size: 28.5px;
+}
+.sol h1, .sol h3, .parcial-nublado h1, .parcial-nublado h3, .nublado h1, .nublado h3, .chuva h1, .chuva h3 {
+  color: #1a2238;
+  padding-left: 10px;
+}
+
+.parcial-nublado .txt-box .txt {
+  width: 60%;
+}
+.parcial-nublado .txt-box .details {
+  margin-left: -70px;
+}
+.parcial-nublado .txt-box h1 {
+  font-size: 45px;
+}
+.parcial-nublado .txt-box h3 {
+  line-height: 20px;
+  font-size: 24px;
+}
+
+i {
+  font-size: 8rem;
+  position: relative;
+  top: 10px;
+  left: 125px;
+  padding: 5px;
+}
+
+.bi-cloud-drizzle-fill {
+  color: #3393FF;
+  position: relative;
+  left: 0;
+  top: 28px;
+}
+
+.bi-brightness-high-fill {
+  color: #fdd143;
+  filter: drop-shadow(1px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.bi-cloud-fill {
+  color: #c4c4c4;
+  filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.parcial-nublado .bi-cloud-fill {
+  position: relative;
+  left: 30px;
+  top: 25px;
+}
+
+.nublado i + i {
+  position: relative;
+  top: 19px;
+  left: 30px;
+  color: #9c9c9c;
+}
+
+/*# sourceMappingURL=style.css.map */

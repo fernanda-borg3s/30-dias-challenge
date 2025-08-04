@@ -1,0 +1,173 @@
+body{
+  margin:0;
+   background: #4CA5FF;
+  overflow:hidden;
+}
+.nuvem{
+  display:flex;
+
+  justify-content: right;
+  animation: moveNuvem 8s linear infinite;
+}
+ img{
+  position:absolute;
+  width: 200px;
+  
+}
+#container{
+  position: relative;
+  bottom: -20px;
+  width:320px;
+  height: 70vh;
+  display:flex;
+  align-items: flex-end;
+   background: transparent;
+   
+  animation: moveCar 8s linear infinite;
+}
+
+.capo, .lateral{
+  background:#0b5394;
+  position: absolute;
+
+
+}
+.capo{
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  margin-left: 20px;
+}
+
+.janela1, .parabrisa{
+  width: 90px;
+  height: 70px;
+  position: absolute;
+  top:69%;
+  background: rgba(154, 204, 250, 0.8);
+  
+}
+.janela1{
+  left:45px;
+  border-radius: 50px 2px 0px 0px;
+  
+}
+
+.parabrisa{
+  left: 155px;
+   border-radius: 0px 50px 0px 2px;
+}
+.lateral{
+  width: 320px;
+  height: 150px;
+  border-radius: 60px;
+  z-index:1;
+}
+.roda1, .roda2{
+  background: black;
+  width:90px;
+  height:90px;
+  border-radius: 50px;
+  position:absolute;
+  left: 25px;
+  bottom:-30px;
+ text-align: center;
+  z-index:100;
+  animation: rodas 8s linear infinite;
+}
+.bola{
+  position:relative;
+    left: 20px;
+  bottom:-20px;
+    background: #c4c4c4;
+  width:45px;
+  height:45px;
+  border-radius: 22px;
+}
+
+.roda2{
+   left: 190px;
+}
+.farol-t, .farol-f{
+  background: #f44336;
+  width:25px;
+  height:55px;
+  margin: 20px 5px;
+  z-index:100;
+  position:relative;
+}
+.farol-t{
+  top: -30px;
+  left:-15px;
+   border-radius: 50px 10px 10px 50px;
+}
+.farol-f{
+  left: 265px;
+  top: -30px;
+  border-radius: 10px 50px 50px 10px;
+  background: #ede700;
+
+}
+
+footer{
+  width: 100%;
+  height: 30vh;
+  background: #5e5e5e;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.linha1{
+  width: 100%;
+  height:10px;
+  background: yellow;
+  z-index:1000;
+  
+}
+.smoke img{
+  position:absolute;
+  bottom:0;
+  left:-45px;
+  width:50px;
+  transform:rotate(-25deg);
+  animation: smoke 1.5s linear infinite;
+}
+@keyframes moveNuvem{
+  from{
+    transform: translateX(200px)
+  }
+  to{
+     transform: translateX(-900px)
+  }
+}
+@keyframes moveCar{
+  from{
+    transform: translateX(-320px);
+  }
+  to{
+     transform: translateX(980px);
+  }
+}
+@keyframes rodas{
+  0%{
+    transform:rotate(0);
+  }
+ 
+  100%{
+    transform:rotate(360deg);
+  }
+}
+@keyframes smoke{
+  0%{
+    transform:scale(0);
+    opacity:0;
+  }
+  50%{
+    transform:scale(0.5);
+    opacity: 0.5;
+  }
+  100%{
+    transform:scale(1.1);
+    opacity:0;
+  }
+}

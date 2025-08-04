@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+*{
+  font-family: 'Inconsolata', monospace;
+
+  color:#313715;
+}
+body{
+  background:#e2f9b8;
+  
+}
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:400px;
+  height:400px;
+  box-shadow: 1px 4px 50px rgb(0,0,0,0.3);
+}
+.box{
+  width:400px;
+  height:400px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#bbce8a;
+  
+}
+.typing{
+  text-align:center;
+  line-height:50px;
+  height:350px;
+}
+.typing h1{
+  font-size: 30px;
+  margin-bottom:20px;
+}
+.first{
+    border-right: 2px solid transparent;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-55%); 
+    animation: type 4s steps(44) 1s 1 normal both,
+             blinkCursor 500ms steps(44) infinite normal;
+}
+.second{
+  width:100%;
+  padding:10px 0;
+   border-right: 2px solid transparent;
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    animation: background .5s linear both;
+  animation-delay:6s;
+}
+h2{
+  animation: aparecer 1.5s linear both;
+  animation-delay:7s;
+}
+@keyframes type{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+@keyframes background{
+  from{
+/*     background:transparent; */
+    width: 0;
+  }
+  to{
+    background:#313715;
+  color:#fff;
+    
+    width:100%;
+  }
+}
+@keyframes blinkCursor{
+  from{
+    border-right-color: #313715;
+  }
+  to{
+    border-right-color: transparent;
+  
+  }
+}
+@keyframes aparecer{
+  0%, 30%, 50%{
+    transform:translateY(100px);
+    opacity:0;
+  }
+  100%{
+   transform:translateY(-10px);
+    opacity:1;
+  }
+}

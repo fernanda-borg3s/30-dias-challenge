@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
+* {
+  font-family: "Oswald", sans-serif;
+  color: #fefae0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.caixa {
+  width: 400px;
+  height: 400px;
+  background: #283618;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label p {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+label {
+  width: 133.3333333333px;
+  height: 80px;
+  text-align: center;
+  color: #8398AD;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+  float: left;
+}
+
+input[type=radio]:checked + label {
+  background: #dda15e;
+}
+
+.conteudo {
+  position: absolute;
+  top: 80px;
+}
+.conteudo .quadro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #606c38;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.conteudo .quadro .first-coluna {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo .quadro .img {
+  background-image: url("https://images.pexels.com/photos/70442/pexels-photo-70442.jpeg?cs=srgb&dl=pexels-amar-saleem-70442.jpg&fm=jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 15px 20px;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 280px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.conteudo .quadro .text {
+  width: 200px;
+}
+.conteudo .quadro h1 {
+  font-weight: 800;
+  font-size: 22px;
+  margin: 0;
+}
+.conteudo .quadro p {
+  margin: 20px 0;
+  text-align: justify;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.conteudo #quadro2, .conteudo #quadro3 {
+  padding: 20px 35px 0 20px;
+  width: 380px;
+}
+.conteudo #quadro2 p, .conteudo #quadro3 p {
+  font-size: 15px;
+}
+
+#tabela1:checked ~ .conteudo #quadro1, #tabela2:checked ~ .conteudo #quadro2, #tabela3:checked ~ .conteudo #quadro3, #tabela4:checked ~ .conteudo #quadro4 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-out 0.4s;
+}
+
+/*# sourceMappingURL=style.css.map */

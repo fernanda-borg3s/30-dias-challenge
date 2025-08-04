@@ -1,0 +1,214 @@
+body{
+background:#8FE3CF;
+  
+}
+.container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:400px;
+  height:400px;
+  margin-left:-200px;
+  margin-top:-200px;
+  box-shadow: 1px 0px 50px rgb(0,0,0,0.3);
+background:transparent;
+}
+
+.box{
+  width:300px;
+  height:300px;
+  position:relative;
+  top:50px;
+  left:50px;
+}
+.body{
+   position:relative;
+  top:20px;
+  left:calc(50px + 10px);
+   width:170px;
+  height:230px;
+  border-radius: 71% 71% 65% 65% ;
+  background: #000;
+}
+.box-circle{
+  display:flex;
+}
+.circle-left, .circle-right{
+    background:#fff;
+    width: 55px;
+  height: 90px;
+   position:relative;
+  top:15px;
+  left:30px;
+  z-index:1;
+   border-radius:84%;
+  
+  
+}
+.circle-left{
+transform:rotate(10deg);
+}
+
+.circle-right{
+
+transform:rotate(-10deg);
+  
+  
+}
+.circle-bottom{
+   background:#fff;
+    width:143px;
+  height: 160px;
+   border-radius: 81%;
+   position:relative;
+  top:-35px;
+  left:15px;
+}
+.arm-left, .arm-right{
+  height:80px;
+  width:25px;
+  border-radius:71%;
+  background:#000;
+  position:absolute;
+
+}
+.arm-left{
+    top:95px;
+  left:45px;
+  transform:rotate(48deg);
+  animation: moveArmLeft 1s ease-in-out infinite alternate;
+  
+}
+.arm-right{
+  top:95px;
+  transform:rotate(-48deg);
+  right:55px;
+  z-index:-1;
+  animation: moveArmRight 1s ease-in-out infinite alternate;
+  
+}
+.eye-left, .eye-right{
+  width:18px;
+  height:18px;
+  border-radius:20px;
+  position:absolute;
+  top:30px;
+  background:#000;
+  
+}
+.eye-left::before, .eye-right::before{
+  content:'.';
+  background:#fff;
+  width:10px;
+  height:10px;
+  border-radius:5px;
+  color:#fff;
+  text-align:center;
+  position:absolute;
+  bottom:5.5px;
+  left:2.5px;
+  transform:rotate(-100deg);
+  
+  animation: fechaOlhos 5s linear infinite alternate;
+  
+}
+.eye-left::after, .eye-right::after{
+   content:'';
+  background:pink;
+  width:20px;
+  height:15px;
+  border-radius:60%;
+  position:absolute;
+  top:20px;
+}
+.eye-left::after{
+  left:-15px;
+}
+.eye-right::after{
+  right:-15px;
+}
+.eye-left{
+  left:25px;
+  transform:rotate(-10deg);
+  
+}
+.eye-right{
+  left:15px;
+  transform:rotate(10deg);
+  
+}
+.bico{
+  width:0;
+  height:0;
+  border-top:25px solid orange;
+  border-left:15px solid transparent;
+  border-right:15px solid transparent;
+  border-radius: 15px 15px 0 0;
+  position:absolute;
+  left:71px;
+  top:58px;
+  z-index:10;
+}
+.box-pe{
+  display:flex;
+  justify-content:space-around;
+}
+.pe-left, .pe-right{
+   height: 30px;
+     width: 60px;
+  background:orange;
+  border-radius: 71%;
+  z-index:-1;
+  position:relative;
+  top:0px;
+  
+}
+.pe-left{
+  left:25px;
+}
+.pe-right{
+  right:30px;
+}
+.pe-left::after{
+   content:'';
+  background:rgb(0,0,0,0.1);
+  width:180px;
+  height:15px;
+  border-radius:60%;
+  position:absolute;
+  top:28px;
+  left:-10px;
+  
+}
+@keyframes fechaOlhos{
+  0%, 10%{
+   transform:translateX(0px) scale(1) rotate(-80deg) ;
+  }
+  14%, 30%, 50%{
+     transform:translateX(4px) scale(0.8) rotate(100deg);
+  }
+  60%, 70%{
+     transform:translateX(-2px) scale(0.9) rotate(250deg);
+ 
+  }
+  80%, 90%, 100%{
+     transform:translateY(4px) scale(0.8) rotate(190deg);
+    
+  }
+}
+@keyframes moveArmLeft{
+  from{
+    transform:rotate(48deg)
+  }
+  to{
+    transform:rotate(55deg)
+  }
+}
+@keyframes moveArmRight{
+  from{
+    transform:rotate(-48deg)
+  }
+  to{
+    transform:rotate(-55deg)
+  }
+}

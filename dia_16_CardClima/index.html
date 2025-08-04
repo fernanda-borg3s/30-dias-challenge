@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dia 16 - Card Clima</title>
+</head>
+<body>
+    <div class='container'>
+  <div class="slider">
+        <div class="slides">
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+            <div class='slide sol first'>
+              <i class="bi bi-brightness-high-fill"></i>
+              <div class='txt-box'>
+                  <div class='txt'>
+                    <h1>33ºC</h1>
+                    <h3>Ensolarado</h3>
+                  </div>
+                  <div class='details'>
+                    <p>Chuva: 0%</p>
+                    <p>Umidade: 28%</p>
+                    <p>Vento: 10km/h</p>
+                  </div>
+              </div>
+            </div>
+            <div class='slide parcial-nublado'>
+              <i class="bi bi-brightness-high-fill"></i>
+              <i class="bi bi-cloud-fill"></i>
+               <div class='txt-box'>
+                <div class='txt'>
+                  <h1>21ºC</h1>
+                  <h3>Parcialmente Nublado</h3>
+                </div>
+                <div class='details'>
+                <p>Chuva: 25%</p>
+                <p>Umidade: 32%</p>
+                <p>Vento: 15km/h</p></div>
+              </div>
+          </div>
+          <div class='slide nublado'>
+              <i class="bi bi-cloud-fill"></i>
+              <i class="bi bi-cloud-fill"></i>
+                <div class='txt-box'>
+                  <div class='txt'>
+                    <h1>20ºC</h1>
+                  <h3>Nublado</h3>
+                  </div>
+                  <div class='details'>
+                  <p>Chuva: 50%</p>
+                  <p>Umidade: 48%</p>
+                  <p>Vento: 19km/h</p></div>
+                </div> 
+           </div>
+           
+          <div class='slide chuva'>
+               <i class="bi bi-cloud-fill"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-cloud-drizzle-fill" viewBox="0 0 16 16">
+               <path d="M4.158 12.025a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm-3.5 1.5a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 0 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm6 0a.5.5 0 0 1 .316.633l-.5 1.5a.5.5 0 1 1-.948-.316l.5-1.5a.5.5 0 0 1 .632-.317zm.747-8.498a5.001 5.001 0 0 0"/>
+              </svg>
+                <div class='txt-box'>
+                  <div class='txt'>
+                    <h1>17ºC</h1>
+                  <h3>Chuva</h3>
+                  </div>
+                  <div class='details'>
+                  <p>Chuva: 85%</p>
+                  <p>Umidade: 80%</p>
+                  <p>Vento: 18km/h</p></div>
+                </div>
+            </div>
+          
+            <div class="navegar-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>      
+            </div>
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>

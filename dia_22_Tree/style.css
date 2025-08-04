@@ -1,0 +1,93 @@
+body{
+  margin:0;
+  background:#2b7a0b;
+
+}
+.sky{
+  height:50vh;
+  background:#00f8d8;
+}
+.floor{
+  width:100%;
+  height:50vh;
+  background:#2b7a0b;
+  display:flex;
+  align-content:center;
+  justify-content:center;
+}
+.container-tree{
+  width:300px;
+  height:300px;
+  position:relative;
+  top:-50%;
+  /* left: 10%; */
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+.copa{
+  width:0;
+  height:0;
+}
+.triangulo-left{
+  border-left:80px solid transparent;
+  border-bottom:250px solid #c6d57e;
+animation: left 1s ease;
+}
+.triangulo-right{
+  border-right:80px solid transparent;
+  border-bottom:250px solid rgb(178,191,113);
+
+  
+}
+.galho-principal{
+  width:7px;
+  height:260px;
+  background:#be8c63;
+  position:relative;
+  right:4px;
+  top:60px;
+  border-radius:2px;
+}
+.triangulo-left::after{
+  content:'';
+  width:150px;
+  height:8px;
+  border-radius:20px;
+  background:rgb(0,0,0,0.15);
+  position:absolute;
+  bottom:-18%;
+  left:115px;
+}
+.ramo{
+  background:#be8c63;
+  width:5.5px;
+  height:40px;
+  border-radius:4px;
+  margin:0;
+  position:relative;
+  
+}
+
+.ramo1, .ramo2, .ramo3{
+  right:14px;
+  bottom:150px;
+  transform: rotate(-30deg)
+}
+.ramo4, .ramo5, .ramo6{
+  left:7px;
+  bottom:328px;
+  transform: rotate(30deg)
+}
+.ramo6{
+  height:65px;
+  left:15px;
+  transform: rotate(40deg)
+}
+.ramo3{
+  height:70px;
+   right:25px;
+  transform: rotate(-40deg)
+}
